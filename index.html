@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RI Trading Spot - الصفحة الرئيسية</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            direction: rtl;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E0F3FF;
+        }
+
+        .main-header {
+            background-color: #0088cc;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main-header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .main-header .logo img {
+            width: 50px;
+            height: 50px;
+            margin-left: 10px;
+        }
+
+        .main-header h1 {
+            font-size: 1.8em;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px; /* زيادة التباعد بين الأزرار */
+        }
+
+        nav ul li {
+            margin: 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 40px; /* توسيع الأزرار */
+            background-color: #007bb5;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            font-size: 1.1em;
+        }
+
+        nav ul li a:hover {
+            background-color: #005f8d;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .intro, .recommendations {
+            background-color: #fff;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro h2, .recommendations h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        .intro p, .recommendations p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .recommendation-card {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f1faff;
+            border-left: 5px solid #0088cc;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .recommendation-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        footer {
+            background-color: #0088cc;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+
+        footer p {
+            font-size: 1.1em;
+        }
+
+        /* جعل التصميم متجاوب */
+        @media (max-width: 768px) {
+            .main-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px; /* تقليل التباعد في الشاشات الصغيرة */
+            }
+
+            .main-header .logo img {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            nav ul li a {
+                padding: 12px 30px; /* تقليل حجم الأزرار في الشاشات الصغيرة */
+            }
+
+            main {
+                padding: 15px;
+            }
+
+            .intro, .recommendations {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+            <h1>RI Trading Spot</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="technical-analysis.html">التحليل الفني</a></li>
+                <li><a href="subscriptions.html">الاشتراكات</a></li>
+                <li><a href="education.html">التعليم</a></li>
+                <li><a href="news.html">الأخبار</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="intro">
+            <h2>أهلاً بك في RI Trading Spot</h2>
+            <p>ابدأ رحلتك الآن مع توصيات وتحليلات محدثة يوميًا في عالم تداول العملات الرقمية.</p>
+        </section>
+
+        <section class="recommendations">
+            <h2>توصيات اليوم</h2>
+            <div class="recommendation-card">
+                <h3>بيتكوين</h3>
+                <p>اشتر عند $48,000 - البيع المتوقع $52,000</p>
+            </div>
+            <div class="recommendation-card">
+                <h3>إيثريوم</h3>
+                <p>اشتر عند $3,400 - البيع المتوقع $3,800</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 RI Trading Spot - جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>
